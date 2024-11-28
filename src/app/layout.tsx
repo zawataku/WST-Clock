@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "起床標準時（WST）ビュワー",
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
+        <Analytics />
         {children}
       </body>
     </html>
