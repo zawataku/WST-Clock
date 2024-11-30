@@ -13,8 +13,8 @@
     "eslint-plugin-tailwindcss": "^3.17.5",
     "next": "15.0.3",
     "postcss-styled-syntax": "^0.7.0",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "usehooks-ts": "^3.1.0"
   },
   "devDependencies": {
