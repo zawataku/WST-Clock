@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useLocalStorage } from "usehooks-ts"
 
 const convertToWST = (wakeupTime: string, currentTime: Date): string => {
     if (!wakeupTime) return '';
@@ -22,7 +23,7 @@ const convertToWST = (wakeupTime: string, currentTime: Date): string => {
 };
 
 export default function Clock() {
-    const [wakeupTime, setWakeupTime] = useState('');
+    const [wakeupTime, setWakeupTime] = useLocalStorage('WST_TIME', '');
     const [wst, setWst] = useState('');
     const [currentTime, setCurrentTime] = useState<Date | null>(null);
 
